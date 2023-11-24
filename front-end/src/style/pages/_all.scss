@@ -1,0 +1,78 @@
+@use "sass:map";
+@import "_repons";
+@import "theme";
+
+
+html,
+body {
+    margin: 0;
+}
+
+* {
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    // background: map.get($them-colors, "main");
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.button_submit {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 16px 30px 17px;
+    color: map.get($them-colors, "main");
+    height: 100%;
+
+    :hover {
+        background: map.get($them-colors, "normal-text");
+        color: #ffffff;
+        background-color: #ffffff;
+    }
+}
+
+@include Repons($DESKTOP) {
+    .col-xl-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-xl-6 {
+        flex: 0 0 50%;
+        max-width: 50%; 
+    }
+}
+@include Repons($MEDIUM_DEVICE) {
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
