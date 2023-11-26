@@ -1,6 +1,6 @@
 import { memo } from 'react'
-
+import ListProduct from 'pages/productPage/listProduct';
 const HomePage = () => {
-    return <h1>HomePage</h1>;
+    return <ListProduct/> ;
 };
 export default memo(HomePage);

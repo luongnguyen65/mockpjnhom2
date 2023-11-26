@@ -181,4 +181,40 @@
         border: none;
         height: 100%;
     }
+
+    .search_phone {
+        display: flex ;
+        align-items: center;
+
+        .search_phone_icon {
+        font-size: 25px;
+        padding: 10px;
+        background: #f5f5f5;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        float: left;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: map.get($them-colors, "main");
+        cursor: pointer;
+
+        }
+        .search_phone_text {
+            display: inline-block;
+
+            p {
+                color: map.get($them-colors, "normal-text");
+                font-weight: bold;
+                margin-top: 5px;
+            }
+
+            span {
+                color: #6f6f6f;
+                font-size: 14px;
+            }
+        }
+    }
 }

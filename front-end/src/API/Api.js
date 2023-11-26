@@ -5,6 +5,9 @@ const axiosClient = axios.create({
     baseURL: `http://localhost:8090/api/v1`,
     //timeout: 5000, // default is `0` (no timeout)
     // responseType: 'json'
+    header: {
+        "content-type": "application/json",
+    }
 });
 
 axiosClient.interceptors.request.use(async (config) => {
@@ -39,4 +42,6 @@ axiosClient.interceptors.response.use((response) => {
     throw error;
 });
 
-export default API ;
+export default axiosClient ;
+
+
