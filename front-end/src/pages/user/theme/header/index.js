@@ -161,12 +161,13 @@ const Header = () => {
 
                         </div>
                         <div className="search_phone">
-                            <div className="search_phone_icon">
+                            <div className="search_phone_icon" >
                                 <AiOutlinePhone />
                             </div>
-                            <div className="search_phone_text"></div>
+                            <div className="search_phone_text">
                             <p>039.8018.663</p>
                             <span>Support 24/7</span>
+                            </div>
                         </div>
                     </div>
                 </div>
