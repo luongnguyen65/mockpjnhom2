@@ -34,6 +34,16 @@ CREATE TABLE `Product`(
     FOREIGN KEY(category_id) REFERENCES Category(id)
 );
 
+DROP TABLE IF EXISTS `User`;
+CREATE TABLE `User`(
+	id						INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    full_name				VARCHAR(50) NOT NULL,
+    email					VARCHAR(50) NOT NULL UNIQUE KEY,
+    username				VARCHAR(20) NOT NULL UNIQUE KEY,
+    `password`				VARCHAR(500) NOT NULL,
+    `role`					ENUM("User", "Admin")
+);
+
 -- =============================================
 -- INSERT DATA 
 -- =============================================
@@ -73,4 +83,9 @@ VALUES
 					(N'Tai nghe Có Dây Samsung IG935'				, 		'2000000'		,	'Red'	, 		1 			, 	3 			,	'2020-04-07'	, 	 4		 ,	'https://laz-img-sg.alicdn.com/p/f1c1efec3e76dae4c60560e02f044562.jpg'													),
 					(N'Tai nghe Bluetooth True Wireless'			, 		'22000000'		,	'Black'	, 		1 			,	3  			,	'2020-04-07'	,	 3		 ,	'https://cdn.tgdd.vn/Products/Images/54/230363/tai-nghe-bluetooth-true-wireless-mozard-ts13-thumb-2-600x600.jpeg'		),
 					(N'iPad Gen 9 10.2 inch 64GB Wifi 2021'			, 		'20000000'		,	'Black'	, 		2 			,  	5			,	'2020-04-09'	, 	 2		 ,	'https://cdn.tgdd.vn/Products/Images/522/247517/iPad-9-wifi-den-600x600.jpg'											);
-	
+
+INSERT INTO `User` 	(full_name						,	email						,	username					,	`password`														,	`role`		)
+VALUES				("Nguyen Van A"					,	"nguyenvana@gmail.com"		,	"nguyenvana"				,	"$2a$10$W2neF9.6Agi6kAKVq8q3fec5dHW8KUA.b0VSIGdIZyUravfLpyIFi"	,	"Admin"		),
+					("Nguyen Van B"					,	"nguyenvanb@gmail.com"		,	"nguyenvanb"				,	"$2a$10$W2neF9.6Agi6kAKVq8q3fec5dHW8KUA.b0VSIGdIZyUravfLpyIFi"	,	"User"		),
+                    ("Nguyen Van C"					,	"nguyenvanc@gmail.com"		,	"nguyenvanc"				,	"$2a$10$W2neF9.6Agi6kAKVq8q3fec5dHW8KUA.b0VSIGdIZyUravfLpyIFi"	,	"User"		),
+                    ("Nguyen Van D"					,	"nguyenvand@gmail.com"		,	"nguyenvand"				,	"$2a$10$W2neF9.6Agi6kAKVq8q3fec5dHW8KUA.b0VSIGdIZyUravfLpyIFi"	,	"User"		);

@@ -1,7 +1,7 @@
-package com.vti.Specification;
+package com.vti.specification;
 
-import com.vti.Entity.Product;
-import com.vti.Filter.ProductFilter;
+import com.vti.entity.Product;
+import com.vti.filter.ProductFilter;
 import lombok.AllArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
 

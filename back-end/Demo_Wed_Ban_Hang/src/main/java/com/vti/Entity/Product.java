@@ -1,4 +1,4 @@
-package com.vti.Entity;
+package com.vti.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

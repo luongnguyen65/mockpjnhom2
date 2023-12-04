@@ -1,9 +1,9 @@
-package com.vti.Controller;
+package com.vti.controller;
 
-import com.vti.DTO.CategoryDTO;
-import com.vti.Form.CreatingCategoryForm;
-import com.vti.Form.UpdatingCategoryForm;
-import com.vti.Service.ICategoryService;
+import com.vti.dto.CategoryDTO;
+import com.vti.form.CreatingCategoryForm;
+import com.vti.form.UpdatingCategoryForm;
+import com.vti.service.ICategoryService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;

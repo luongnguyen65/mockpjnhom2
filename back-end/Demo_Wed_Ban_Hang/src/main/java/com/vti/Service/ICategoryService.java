@@ -1,8 +1,8 @@
-package com.vti.Service;
+package com.vti.service;
 
-import com.vti.Entity.Category;
-import com.vti.Form.CreatingCategoryForm;
-import com.vti.Form.UpdatingCategoryForm;
+import com.vti.entity.Category;
+import com.vti.form.CreatingCategoryForm;
+import com.vti.form.UpdatingCategoryForm;
 import java.util.List;
 
 public interface ICategoryService {

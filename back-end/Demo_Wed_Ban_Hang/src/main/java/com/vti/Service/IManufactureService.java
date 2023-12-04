@@ -1,8 +1,8 @@
-package com.vti.Service;
+package com.vti.service;
 
-import com.vti.Entity.Manufacture;
-import com.vti.Form.CreatingManufactureForm;
-import com.vti.Form.UpdatingManufactureForm;
+import com.vti.entity.Manufacture;
+import com.vti.form.CreatingManufactureForm;
+import com.vti.form.UpdatingManufactureForm;
 import java.util.List;
 
 public interface IManufactureService {
