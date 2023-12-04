@@ -5,8 +5,6 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class ProductFilter {
+public class UserFilter {
     private String search;
-
-    private String categoryName;
 }

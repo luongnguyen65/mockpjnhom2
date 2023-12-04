@@ -1,13 +1,13 @@
-package com.vti.Service;
+package com.vti.service;
 
-import com.vti.Entity.Product;
-import com.vti.Filter.ProductFilter;
-import com.vti.Form.CreatingProductForm;
-import com.vti.Form.UpdatingProductForm;
-import com.vti.Repository.ICategoryRepository;
-import com.vti.Repository.IManufactureRepository;
-import com.vti.Repository.IProductRepository;
-import com.vti.Specification.ProductSpecification;
+import com.vti.entity.Product;
+import com.vti.filter.ProductFilter;
+import com.vti.form.CreatingProductForm;
+import com.vti.form.UpdatingProductForm;
+import com.vti.repository.ICategoryRepository;
+import com.vti.repository.IManufactureRepository;
+import com.vti.repository.IProductRepository;
+import com.vti.specification.ProductSpecification;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 import org.modelmapper.TypeMap;
@@ -18,7 +18,6 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
-import java.util.List;
 
 @Service
 public class ProductService implements IProductService {

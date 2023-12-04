@@ -1,12 +1,11 @@
-package com.vti.Controller;
+package com.vti.controller;
 
-import com.vti.DTO.ManufactureDTO;
-import com.vti.DTO.ProductDTO;
-import com.vti.Entity.Product;
-import com.vti.Filter.ProductFilter;
-import com.vti.Form.CreatingProductForm;
-import com.vti.Form.UpdatingProductForm;
-import com.vti.Service.IProductService;
+import com.vti.dto.ProductDTO;
+import com.vti.entity.Product;
+import com.vti.filter.ProductFilter;
+import com.vti.form.CreatingProductForm;
+import com.vti.form.UpdatingProductForm;
+import com.vti.service.IProductService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;

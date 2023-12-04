@@ -1,12 +1,12 @@
-package com.vti.Service;
+package com.vti.service;
 
-import com.vti.Entity.Manufacture;
-import com.vti.Entity.Product;
-import com.vti.Form.CreatingManufactureForm;
-import com.vti.Form.UpdatingManufactureForm;
-import com.vti.Repository.ICategoryRepository;
-import com.vti.Repository.IManufactureRepository;
-import com.vti.Repository.IProductRepository;
+import com.vti.entity.Manufacture;
+import com.vti.entity.Product;
+import com.vti.form.CreatingManufactureForm;
+import com.vti.form.UpdatingManufactureForm;
+import com.vti.repository.ICategoryRepository;
+import com.vti.repository.IManufactureRepository;
+import com.vti.repository.IProductRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

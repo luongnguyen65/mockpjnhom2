@@ -1,6 +1,6 @@
-package com.vti.Repository;
+package com.vti.repository;
 
-import com.vti.Entity.Category;
+import com.vti.entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

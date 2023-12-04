@@ -1,9 +1,9 @@
-package com.vti.Controller;
+package com.vti.controller;
 
-import com.vti.DTO.ManufactureDTO;
-import com.vti.Form.CreatingManufactureForm;
-import com.vti.Form.UpdatingManufactureForm;
-import com.vti.Service.IManufactureService;
+import com.vti.dto.ManufactureDTO;
+import com.vti.form.CreatingManufactureForm;
+import com.vti.form.UpdatingManufactureForm;
+import com.vti.service.IManufactureService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
