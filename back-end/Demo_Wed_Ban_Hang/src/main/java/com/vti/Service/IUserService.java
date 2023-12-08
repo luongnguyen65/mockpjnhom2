@@ -5,8 +5,9 @@ import com.vti.filter.UserFilter;
 import com.vti.form.CreatingUserForm;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
-public interface IUserService {
+public interface IUserService extends UserDetailsService {
     Page<User> getAllUsers(Pageable pageable, UserFilter form);
 
     User getUserById(int id);
